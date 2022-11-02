@@ -1,14 +1,17 @@
 let checkPrime=(num)=>{
     let factor=0;
     for(i=1;i<=num;i++){
+
         if(num%i===0){
-            factor++
-        }
+
+        factor++;
+       
     }
-    if(factor==2){
+    if(factor===2){
      return true
-    }else{
-        return false
     }
+    else {
+    return false;  
+    } 
 }
 console.log(checkPrime(13))
